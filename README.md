@@ -12,7 +12,6 @@ Then, you can insert links to any job website, Linkedin, BestJobs, eJobs, etc.. 
 
 <h2>Resources</h2>
 <ul>
-  <li>https://www.einfochips.com/blog/how-to-extract-keywords-from-text-using-nlp-and-machine-learning/</li>
   <li>https://www.andyfitzgeraldconsulting.com/writing/keyword-extraction-nlp/</li>
   <li>https://www.analyticsvidhya.com/blog/2020/11/words-that-matter-a-simple-guide-to-keyword-extraction-in-python/</li>
   <li>https://towardsdatascience.com/find-text-similarities-with-your-own-machine-learning-algorithm-7ceda78f9710</li>
