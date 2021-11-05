@@ -3,10 +3,10 @@
 Repository for the 2NHACK2021 hackaton.
 
 <h2>Project</h2><br>
-Create a platform to which you can send your data in the first stage. (like creating a user profile)
-Then, you can insert links to any job website, Linkedin, BestJobs, eJobs, etc.. and it will generate a CV with your information to match the job requirements.
+Create a platform to which you can send your data in the first stage. (like creating a user profile).<br>
+Then, you can insert links to any job website, Linkedin, BestJobs, eJobs, etc.. and it will generate a CV with your information to match the job requirements.<br><br>
 
-<b>Keywords:</b>Machine Learning(ML), Artificial Intelligence(AI), Web Scraping, Resume, CV
+<b>Keywords:</b>Machine Learning(ML), Artificial Intelligence(AI), Web Scraping, Resume, CV<br>
 <b>Used languages:</b>Python
 
 
