@@ -1,5 +1,9 @@
 # 2NHACK2021
+
 Repository for the 2NHACK2021 hackaton.
+
+<<h2>Project</h2><br>
+<h3>PCreate a platform to which you can send your data in the first stage.</h3>
 
 
 <b>Resources</b>
