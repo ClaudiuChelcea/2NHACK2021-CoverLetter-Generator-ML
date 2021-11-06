@@ -23,6 +23,7 @@ while 1:
 
 # Prerequisites
 warnings.simplefilter(action='ignore', category=FutureWarning)
+warnings.filterwarnings("ignore")
 
 # read json into a dataframe
 doc = "data/engineering-jobs-database.json"
@@ -89,12 +90,12 @@ stopwords=get_stop_words("resources/stopwords.txt") #ignore most-common words
 
 #get the text column
 docs=df_idf['text'].tolist()
-print(docs)
+# print(docs)
 
 #create a vocabulary of words,
 # ignore words that appear in 85% of documents,
 # eliminate stop words
-cv=CountVectorizer(max_df=0.6,stop_words=stopwords,max_features=10000,strip_accents=None) # all the common words
+cv=CountVectorizer(max_df=0.4,stop_words=stopwords,max_features=10000,strip_accents=None) # all the common words
 word_count_vector=cv.fit_transform(docs)
 
 # Check top 10 vocabulary
