@@ -1,0 +1,57 @@
+At CrowdStrike we’re on a mission - to stop breaches. Our groundbreaking technology, services delivery, and intelligence gathering together with our innovations in machine learning and behavioral-based detection, allow our customers to not only defend themselves, but do so in a future-proof manner. Because of that we’ve earned numerous honors and top rankings for our technology, organization and talent. Our culture was purpose-built to be remote first, and we offer flexible work arrangements to help our people manage their personal and professional lives in a way that works for them. If you’re ready to work on unrivaled technology with a team that makes a difference every day, let’s talk.
+
+About The Product
+
+CrowdStrike Falcon for Mobile is a two-component security product. One component is a “sensor”: a driver installed on mobile devices that observes system activity and recognizes malicious behavior, then provides on-device prevention capability and remote telemetry to the Falcon cloud. The sensor processes thousands of events per second to provide deep visibility into operations on the endpoint, and performs rich correlation and computation to identify malicious events.
+
+The cloud component aggregates sensor telemetry for each customer’s network, identifies malicious behavior, and presents our customers’ operations teams with a prioritized summary of the threats detected in their environments.
+
+About The Role
+
+We are looking for an intern to join the Android Sensor Team for 12 weeks in Summer 2022.
+
+As an intern, you will build a new feature that will allow the Falcon sensor to detect malware present on mobile devices and upload it to CrowdStrike’s internal repository where it can be accessed by the intel team. The project will be executed in close collaboration and under the supervision of a Senior Android Sensor Engineer.
+
+As a member of the Android Sensor team, you will be expected to make significant contributions to the design and implementation of major development projects. You will be required to identify solutions and collaborate with others to implement our features. You will work on stimulating problems borne out of the scale of our deployment and the stringent performance and security requirements of our sensors.
+
+Join CrowdStrike and become a key leader building the most innovative endpoint security solution in the world.
+
+As a Sensor Engineer, You Will
+
+As part of the team you will:
+Make significant contributions to the design and implementation of the Android mobile sensor
+Help identify innovative solutions to hard performance or scale problems
+Maintain the sensor up-to-date with the latest OS developments and patches
+Collaborate with cross-functional teams to implement product features
+What You’ll Need
+Be towards a BA or BS / MA or MS degree in Cybersecurity, Computer Science/Engineering graduating in 2022
+Bonus Points
+Able to collaborate, communicate and work effectively in a distributed team
+Low-level OS knowledge in either Android or Linux
+Experience with Java, C++ and System Development
+What You Can Expect
+Executive Speaker Series & Tech Talks
+Fun socials and give-back events (e.g. virtual trivia, escape rooms, etc.)
+Development workshops to grow your soft and hard skills
+Networking opportunities with fellow interns and CrowdStrikers
+Owning impactful projects that move the company forward
+Working alongside a diverse and global team
+Assigned mentor and continuous feedback
+Participation in our Employee Resource Groups (ERGs)
+Access to our FalconFit Wellness Program and Employee Assistance Program
+Fun Slack channels (e.g. food, gaming, sports, pets, etc.)
+Here’s what our previous interns have to say about our program:
+The CrowdStrike Internship Experience (video)
+Intern Testimonials blog post (TBA)
+Our feature on The Internship Show (podcast)
+Benefits Of Working At CrowdStrike
+Remote-friendly culture
+Market leader in compensation and equity awards
+Competitive vacation and flexible working arrangements
+Paid Parental Leave, including adoption
+Wellness programs
+A variety of professional development and mentorship opportunities
+Open offices have stocked kitchens, coffee, soda and treats
+We are committed to building an inclusive culture of belonging that not only embraces the diversity of our people but also reflects the diversity of the communities in which we work and the customers we serve. We know that the happiest and highest performing teams include people with diverse perspectives that encourage new ways of solving problems, so we strive to attract and develop talent from all backgrounds and create workplaces where everyone feels seen, heard and empowered to bring their full, authentic selves to work.
+
+CrowdStrike is an Equal Opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex including sexual orientation and gender identity, national origin, disability, protected veteran status, or any other characteristic protected by applicable federal, state, or local law.
