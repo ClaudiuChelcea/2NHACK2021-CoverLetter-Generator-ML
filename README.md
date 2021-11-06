@@ -20,5 +20,5 @@ Repository for the 2NHACK2021 hackaton.
   <li>https://towardsdatascience.com/find-text-similarities-with-your-own-machine-learning-algorithm-7ceda78f9710</li>
   <li>https://towardsdatascience.com/natural-language-processing-for-fuzzy-string-matching-with-python-6632b7824c49</li>
   <li>https://www.datacamp.com/community/tutorials/fuzzy-string-python</li>
-  <l1>https://www.youtube.com/watch?v=XVv6mJpFOb0</l1>
+  <li>https://www.youtube.com/watch?v=XVv6mJpFOb0</li>
  </ul>
