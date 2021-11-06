@@ -34,18 +34,20 @@ def get_code_from_page(URL):
     jobs = soup.find_all('div', class_="JobCard")
     return jobs
 
-def display_jobs(jobs, hashtable):
+def display_jobs(jobs = [], FILTER_ACTIVE = 0, filter = ""):
+    count = 0
+    #print(jobs)
     for job in jobs:
+        print("da")
+        count = count + 1
         company_name = job.find('h3', class_="JCContentMiddle__Info JCContentMiddle__Info--Darker").text
         job_name = job.find('h2', class_="JCContentMiddle__Title").text
-        for word in job_name.split(" "):
-            hashtable[word] = 1;
         job_link = job.find('a', class_="JCContent__Logo")
         job_date = job.find('span', class_="JCContentTop__Date").text
         job_link = "https://www.ejobs.ro/user/" + str(job_link)[58:str(job_link).find(">")-1] # next time use job.header.h2.a['href']
         job_skills = job.find()
-        if filter == 1:
-            if filter_job_text in job_name:
+        if FILTER_ACTIVE == 1:
+            if filter in job_name:
                 print(f'''
                 Company Name: {company_name.strip()} 
                 Job Title: {job_name}
@@ -59,36 +61,71 @@ def display_jobs(jobs, hashtable):
             Job link: {job_link}
             Date posted: {str(job_date).strip()}
             ''')
+
+        return count
             
 def increase_page(URL):
     x = int(URL[-1:])
     x = x + 1
     URL = URL[:-1] + str(x)
     return URL
-    
-URL = 'https://www.ejobs.ro/locuri-de-munca/c++/pagina1'
+
+Words=str(input("What to search for: "))
+URL = 'https://www.ejobs.ro/locuri-de-munca/' + Words + '/pagina1'
+Filter = str(input("Filter by: "))
+FILTER_ACTIVE = 1
+if Filter != "":
+    FILTER_ACTIVE = 1
 
 starting_page = get_code_from_page(URL)
 print(URL)
 URL = increase_page(URL)
+pages = [starting_page]
 
+# Get all pages
 for i in range(1,1000):
     jobs = get_code_from_page(URL)
+    pages.append(jobs)
     if jobs == starting_page:
         print("Finished looping through pages")
         break;
     print(URL)
     URL = increase_page(URL)
 
-#URL = 'https://www.ejobs.ro/locuri-de-munca/c++/pagina1'
-#jobs = get_code_from_page(URL)
+# Display all pages
+COUNT_JOBS_AFTER_FILTER = 0
+COUNT_JOBS_BEFORE_FILTER = 0
+for page in pages:
+    for job in page:
+        company_name = job.find('h3', class_="JCContentMiddle__Info JCContentMiddle__Info--Darker").text
+        job_name = job.find('h2', class_="JCContentMiddle__Title").text
+        job_link = job.find('a', class_="JCContent__Logo")
+        job_date = job.find('span', class_="JCContentTop__Date").text
+        job_link = "https://www.ejobs.ro/user/" + str(job_link)[58:str(job_link).find(
+            ">") - 1]  # next time use job.header.h2.a['href']
+        job_skills = job.find()
+        COUNT_JOBS_BEFORE_FILTER = COUNT_JOBS_BEFORE_FILTER + 1
+        if FILTER_ACTIVE == 1:
+            if Filter in job_name:
+                print(f'''
+                Company Name: {company_name.strip()} 
+                Job Title: {job_name}
+                Job link: {job_link}
+                Date posted: {str(job_date).strip()}
+                ''')
+                COUNT_JOBS_AFTER_FILTER = COUNT_JOBS_AFTER_FILTER + 1
+        else:
+            print(f'''
+            Company Name: {company_name.strip()} 
+            Job Title: {job_name}
+            Job link: {job_link}
+            Date posted: {str(job_date).strip()}
+            ''')
 
-#COUNT = 0
-#hashtable = {}
-#filter = 1 # apply filter
-#filter_job_text = 'C++'
-#
-#display_jobs(jobs, hashtable)
+# Output
+print(str(COUNT_JOBS_BEFORE_FILTER) + " jobs found in this section!")
+print(str(COUNT_JOBS_AFTER_FILTER) + " jobs titles match your search criteria!")
+
 
 
 
