@@ -1,6 +1,8 @@
+import requests
+import collections
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
-import requests
+
 
 # Get url
 # url = str(input("Insert URL: "));
@@ -83,7 +85,7 @@ URL = increase_page(URL)
 pages = [starting_page]
 
 # Get all pages
-for i in range(1,1000):
+for i in range(1,20):
     jobs = get_code_from_page(URL)
     pages.append(jobs)
     if jobs == starting_page:
@@ -95,10 +97,24 @@ for i in range(1,1000):
 # Display all pages
 COUNT_JOBS_AFTER_FILTER = 0
 COUNT_JOBS_BEFORE_FILTER = 0
+hashtable = {}
+break_all = 0
+url_list = []
 for page in pages:
+    if break_all == 1:
+        break;
     for job in page:
         company_name = job.find('h3', class_="JCContentMiddle__Info JCContentMiddle__Info--Darker").text
+        if company_name == "" :
+            break_all = 1
+            break;
         job_name = job.find('h2', class_="JCContentMiddle__Title").text
+        for word in job_name.split(" "):
+            if(word not in hashtable):
+                hashtable[word] = 1
+            else:
+                hashtable[word] = hashtable[word] + 1
+
         job_link = job.find('a', class_="JCContent__Logo")
         job_date = job.find('span', class_="JCContentTop__Date").text
         job_link = "https://www.ejobs.ro/user/" + str(job_link)[58:str(job_link).find(
@@ -113,6 +129,7 @@ for page in pages:
                 Job link: {job_link}
                 Date posted: {str(job_date).strip()}
                 ''')
+                url_list.append(job_link);
                 COUNT_JOBS_AFTER_FILTER = COUNT_JOBS_AFTER_FILTER + 1
         else:
             print(f'''
@@ -122,10 +139,16 @@ for page in pages:
             Date posted: {str(job_date).strip()}
             ''')
 
+
 # Output
 print(str(COUNT_JOBS_BEFORE_FILTER) + " jobs found in this section!")
 print(str(COUNT_JOBS_AFTER_FILTER) + " jobs titles match your search criteria!")
 
+# Get category
+category = ""
 
-
+if all (k in hashtable for k in ("Software","Engineer")):
+    print()
+    print("Software Enginner");
+# other categories to come
 

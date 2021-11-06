@@ -1,14 +1,13 @@
-from nltk import tokenize
-from operator import itemgetter
 import math
+import nltk
+import requests
+import http.cookiejar
+import urllib.request
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
-import nltk
-
-import requests
-import urllib.request
+from nltk import tokenize
+from operator import itemgetter
 from urllib.request import urlopen
-import nltk
 from bs4 import BeautifulSoup
 
 # Get X keywords
@@ -22,10 +21,18 @@ while 1:
         continue
 
 # Input url
+# c++ gameplay programmer
 url = input("Url: ")
+headers = {'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0'}
+req = urllib.request.Request(url=url, headers=headers)
+
+opener = urllib.request.build_opener()
+opener.addheaders = [('User-Agent', 'MyApp/1.0')]
+urllib.request.install_opener(opener)
+urllib.request.urlretrieve(url)
 
 # Get html code
-html = urlopen(url).read()
+html = urllib.request.urlopen(url).read()
 
 # Remove html
 soup = BeautifulSoup(html, features="html.parser")
@@ -106,15 +113,20 @@ def get_top_n(dict_elem, n):
     result = dict(sorted(dict_elem.items(), key = itemgetter(1), reverse = True)[:n])
     return result
 
-#link https://www.bestjobs.eu/en/job/c-gameplay-programmer
+
 
 for key2remove in stop_words:
     try:
         tf_idf_score.pop(key2remove)
     except:
         continue;
-
+# 20
+# link https://www.bestjobs.eu/en/job/c-gameplay-programmer
+# 20
+# https://www.ejobs.ro/user/locuri-de-munca/c-c-developer-possibility-for-remote-work/1455080
 for key in get_top_n(tf_idf_score, X):
     print(key)
+
+
 
 

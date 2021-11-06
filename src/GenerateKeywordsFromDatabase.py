@@ -1,8 +1,9 @@
-import pandas as pd
 import re
+import warnings
+import pandas as pd
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.feature_extraction.text import TfidfTransformer
-import warnings
+
 
 #
 #
@@ -122,7 +123,7 @@ sorted_items=sort_coo(tf_idf_vector.tocoo())
 #print(sorted_items)
 
 #extract only the top n; n here is 10
-keywords=extract_topn_from_vector(feature_names,sorted_items,X)
+keywords=extract_topn_from_vector(feature_names,sorted_items,X+3)
 
 # now print the results
 # print("\n=====Doc=====")
