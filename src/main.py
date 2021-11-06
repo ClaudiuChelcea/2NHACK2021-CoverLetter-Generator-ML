@@ -25,8 +25,7 @@ while 1:
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
 # read json into a dataframe
-doc = "data/stackoverflow-test.json"
-doc = "data/job.json"
+doc = "data/engineering-jobs-database.json"
 df_idf=pd.read_json(doc,lines=True)
 
 #doc = "data/job.txt"
