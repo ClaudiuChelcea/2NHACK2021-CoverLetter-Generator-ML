@@ -3,9 +3,11 @@
 Repository for the 2NHACK2021 hackaton.
 
 <h2>Project</h2><br>
-Our AI is trained with a large dataset of people`s cover letters that got hired and finds what made them successfull by finding keywords.
-Also you will insert a link to the job you want, to also find keywords.
-Then, the two sets of keywords are matched and a cover letter is AI generated for you that contains those keywords, ensuring a big succes rate.
+<ul>
+  <li>Our AI is trained with a large dataset of people`s cover letters that got hired and finds what made them successfull by finding keywords.</li>
+  <li>Also you will insert a link to the job you want, to also find keywords.</li>
+  <li>Then, the two sets of keywords are matched and a cover letter is AI generated for you that contains those keywords, ensuring a big succes rate.</li>
+</ul>
 
 <b>Keywords:</b> Machine Learning(ML), Artificial Intelligence(AI), Web Scraping, Resume, CV, Text mining, NLP<br>
 <b>Used languages:</b> Python
