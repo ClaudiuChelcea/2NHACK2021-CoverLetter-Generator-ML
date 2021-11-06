@@ -119,7 +119,6 @@ for page in pages:
         job_date = job.find('span', class_="JCContentTop__Date").text
         job_link = "https://www.ejobs.ro/user/" + str(job_link)[58:str(job_link).find(
             ">") - 1]  # next time use job.header.h2.a['href']
-        job_skills = job.find()
         COUNT_JOBS_BEFORE_FILTER = COUNT_JOBS_BEFORE_FILTER + 1
         if FILTER_ACTIVE == 1:
             if Filter in job_name:
