@@ -4,9 +4,10 @@ Repository for the 2NHACK2021 hackaton.
 
 <h2>Project</h2><br>
 <ul>
-  <li>Our AI is trained with a large dataset of people`s cover letters that got hired and finds what made them successfull by finding keywords.</li>
-  <li>Also you will insert a link to the job you want, to also find keywords.</li>
-  <li>Then, the two sets of keywords are matched and a cover letter is AI generated for you that contains those keywords, ensuring a big succes rate.</li>
+  <li>Our platform, WeApply.com, lets you apply to thousands of jobs in a matter of minutes, generating a cover letter and resume with the help of AI personalized to each job!</li>
+  <li>You simply create a user account, process that can be sped up by uploading your CV or a link to your CV, the fields being autocompleted with the info we get from your CV.</li>
+  <li>Then, you can find jobs by inserted keywords or jobs that match your knowledge. The jobs are intended to be returned from diffenent websites, for now working only with 'ejobs'</li>
+  <li>You will then see all the jobs, ranked by the percentage that they match your profile. A cover letter and CV will be generated for you to match the keywords extracted from the jobs you add to your wishlist</li>
 </ul>
 
 <b>Keywords:</b> Machine Learning(ML), Artificial Intelligence(AI), Web Scraping, Resume, CV, Text mining, NLP<br>
