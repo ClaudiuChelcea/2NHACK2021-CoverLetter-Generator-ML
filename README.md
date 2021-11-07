@@ -12,6 +12,11 @@ Repository for the 2NHACK2021 hackaton.
 <b>Keywords:</b> Machine Learning(ML), Artificial Intelligence(AI), Web Scraping, Resume, CV, Text mining, NLP<br>
 <b>Used languages:</b> Python
 
+<h2>Demo</h2>
+
+
+https://user-images.githubusercontent.com/74200190/140644719-3330e076-5f3c-49f4-9265-e74cdb87e881.mp4
+
 
 <h2>Resources</h2>
 <ul>
