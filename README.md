@@ -21,4 +21,11 @@ Repository for the 2NHACK2021 hackaton.
   <li>https://towardsdatascience.com/natural-language-processing-for-fuzzy-string-matching-with-python-6632b7824c49</li>
   <li>https://www.datacamp.com/community/tutorials/fuzzy-string-python</li>
   <li>https://www.youtube.com/watch?v=XVv6mJpFOb0</li>
+  <li>https://transformer.huggingface.co/</li>
+  <li>https://towardsdatascience.com/simple-text-generation-d1c93f43f340?gi=68b6f99492b9</li>
+  <li>https://pypi.org/project/keytotext/</li>
+  <li>TalkToTransformer.com</li>
+  <li>https://stackabuse.com/text-generation-with-python-and-tensorflow-keras/</li>
+  <li>https://www.sbert.net/</li>
+  <li>https://arxiv.org/abs/1908.10084</li>
  </ul>
