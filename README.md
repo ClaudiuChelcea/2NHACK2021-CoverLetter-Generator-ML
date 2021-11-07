@@ -24,7 +24,7 @@ Repository for the 2NHACK2021 hackaton.
   <li>https://transformer.huggingface.co/</li>
   <li>https://towardsdatascience.com/simple-text-generation-d1c93f43f340?gi=68b6f99492b9</li>
   <li>https://pypi.org/project/keytotext/</li>
-  <li>TalkToTransformer.com</li>
+  <li>https://app.inferkit.com/demo</li>
   <li>https://stackabuse.com/text-generation-with-python-and-tensorflow-keras/</li>
   <li>https://www.sbert.net/</li>
   <li>https://arxiv.org/abs/1908.10084</li>
